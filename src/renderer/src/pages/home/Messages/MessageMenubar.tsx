@@ -39,6 +39,8 @@ import { FC, useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
+import { markdownToHtml } from '@renderer/utils/markdown'
+
 interface Props {
   message: Message
   assistantModel?: Model
@@ -77,10 +79,18 @@ const MessageMenubar: FC<Props> = (props) => {
   const onCopy = useCallback(
     (e: React.MouseEvent) => {
       e.stopPropagation()
-      navigator.clipboard.writeText(removeTrailingDoubleSpaces(message.content))
-      window.message.success({ content: t('message.copied'), key: 'copy-message' })
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      const markdownContent = removeTrailingDoubleSpaces(message.content)
+      markdownToHtml(markdownContent).then((htmlContent: string) => {
+        navigator.clipboard.write([
+          new ClipboardItem({
+            'text/html': new Blob([htmlContent], { type: 'text/html' }),
+            'text/plain': new Blob([htmlContent], { type: 'text/plain' })
+          })
+        ])
+        window.message.success({ content: t('message.copied'), key: 'copy-message' })
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      })
     },
     [message.content, t]
   )
