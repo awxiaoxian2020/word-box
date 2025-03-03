@@ -28,18 +28,17 @@ import {
 } from '@renderer/utils'
 import {
   exportMarkdownToNotion,
+  exportMarkdownToYuque,
   exportMessageAsMarkdown,
-  messageToMarkdown,
-  exportMarkdownToYuque
+  messageToMarkdown
 } from '@renderer/utils/export'
+import { markdownToHtml } from '@renderer/utils/markdown'
 import { Button, Dropdown, Popconfirm, Tooltip } from 'antd'
 import dayjs from 'dayjs'
 import { isEmpty } from 'lodash'
 import { FC, useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
-
-import { markdownToHtml } from '@renderer/utils/markdown'
 
 interface Props {
   message: Message

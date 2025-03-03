@@ -1,12 +1,12 @@
 import { WebDavConfig } from '@types'
 import AdmZip from 'adm-zip'
+import { exec } from 'child_process'
 import { app } from 'electron'
 import Logger from 'electron-log'
 import * as fs from 'fs-extra'
 import * as path from 'path'
 
 import WebDav from './WebDav'
-import { exec } from 'child_process'
 
 class BackupManager {
   private tempDir = path.join(app.getPath('temp'), 'cherry-studio', 'backup', 'temp')

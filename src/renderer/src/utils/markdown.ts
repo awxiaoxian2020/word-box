@@ -1,5 +1,5 @@
-import showdown from 'showdown'
 import * as cheerio from 'cheerio'
+import showdown from 'showdown'
 
 // 内联 minireset.css 内容，避免使用文件系统
 const miniresetCSS = `/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -113,7 +113,9 @@ export async function markdownToHtml(markdownContent: string): Promise<string> {
     const content = $(this).html()
 
     // 创建一个临时容器
-    const tempContainer = $('<span></span>').css('display', 'block').html(content)
+    const tempContainer = $('<span></span>')
+      .css('display', 'block')
+      .html(content || '')
 
     // 替换原p元素
     $(this).replaceWith(tempContainer)
@@ -121,7 +123,7 @@ export async function markdownToHtml(markdownContent: string): Promise<string> {
 
   // 处理无序列表：将无序列表转换为有序列表
   $('ul').each(function () {
-    const ol = $('<ol></ol>').html($(this).html())
+    const ol = $('<ol></ol>').html($(this).html() || '')
     $(this).replaceWith(ol)
   })
 
