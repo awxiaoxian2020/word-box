@@ -21,7 +21,7 @@ if (!app.requestSingleInstanceLock()) {
     await updateUserDataPath()
 
     // Set app user model id for windows
-    electronApp.setAppUserModelId(import.meta.env.VITE_MAIN_BUNDLE_ID || 'com.kangfenmao.WordBox')
+    electronApp.setAppUserModelId(import.meta.env.VITE_MAIN_BUNDLE_ID || 'com.awxiaoxian2020.WordBox')
 
     const mainWindow = windowService.createMainWindow()
     new TrayService()
