@@ -9,8 +9,8 @@ import * as path from 'path'
 import WebDav from './WebDav'
 
 class BackupManager {
-  private tempDir = path.join(app.getPath('temp'), 'cherry-studio', 'backup', 'temp')
-  private backupDir = path.join(app.getPath('temp'), 'cherry-studio', 'backup')
+  private tempDir = path.join(app.getPath('temp'), 'word-box', 'backup', 'temp')
+  private backupDir = path.join(app.getPath('temp'), 'word-box', 'backup')
 
   constructor() {
     this.backup = this.backup.bind(this)
@@ -145,7 +145,7 @@ class BackupManager {
   }
 
   async backupToWebdav(_: Electron.IpcMainInvokeEvent, data: string, webdavConfig: WebDavConfig) {
-    const filename = 'cherry-studio.backup.zip'
+    const filename = 'word-box.backup.zip'
     const backupedFilePath = await this.backup(_, filename, data)
     const webdavClient = new WebDav(webdavConfig)
     return await webdavClient.putFileContents(filename, fs.createReadStream(backupedFilePath), {
@@ -154,7 +154,7 @@ class BackupManager {
   }
 
   async restoreFromWebdav(_: Electron.IpcMainInvokeEvent, webdavConfig: WebDavConfig) {
-    const filename = 'cherry-studio.backup.zip'
+    const filename = 'word-box.backup.zip'
     const webdavClient = new WebDav(webdavConfig)
     const retrievedFile = await webdavClient.getFileContents(filename)
     const backupedFilePath = path.join(this.backupDir, filename)

@@ -1,1 +1,1 @@
-# Cherry Studio Artifacts
+# WordBox Artifacts
