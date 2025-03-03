@@ -1,11 +1,11 @@
 {
   "name": "word-box",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "A powerful AI assistant for producer.",
   "main": "./out/main/index.js",
   "author": "kangfenmao@qq.com",
-  "homepage": "https://github.com/kangfenmao/cherry-studio",
+  "homepage": "https://github.com/awxiaoxian2020/cherry-studio",
   "workspaces": {
     "packages": [
       "local",
