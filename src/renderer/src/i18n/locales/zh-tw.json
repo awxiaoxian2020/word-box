@@ -52,7 +52,7 @@
       "settings.reasoning_effort.low": "短",
       "settings.reasoning_effort.medium": "中",
       "settings.reasoning_effort.off": "關",
-      "settings.reasoning_effort.tip": "該設置僅支持推理模型",
+      "settings.reasoning_effort.tip": "僅支持OpenAI o系列和Anthropic推理模型",
       "title": "助手"
     },
     "auth": {
@@ -109,6 +109,7 @@
       "message.new.context": "新上下文",
       "message.regenerate.model": "切換模型",
       "message.useful": "有用",
+      "message.quote": "引用",
       "resend": "重新發送",
       "save": "保存",
       "settings.code_collapsible": "代码块可折叠",
@@ -393,10 +394,10 @@
       "message.delete.content": "確定要刪除此訊息嗎？",
       "message.delete.title": "刪除訊息",
       "message.multi_model_style": "多模型回答樣式",
-      "message.multi_model_style.fold": "折疊",
-      "message.multi_model_style.grid": "网格",
-      "message.multi_model_style.horizontal": "水平",
-      "message.multi_model_style.vertical": "垂直",
+      "message.multi_model_style.fold": "標籤模式",
+      "message.multi_model_style.grid": "卡片佈局",
+      "message.multi_model_style.horizontal": "橫向排列",
+      "message.multi_model_style.vertical": "縱向堆疊",
       "message.style": "消息樣式",
       "message.style.bubble": "氣泡",
       "message.style.plain": "簡潔",
@@ -405,6 +406,7 @@
       "reset.double.confirm.content": "所有資料將會被清除，您確定要繼續嗎？",
       "reset.double.confirm.title": "資料將會丟失！！！",
       "restore.success": "恢復成功",
+      "restore.failed": "恢復失敗",
       "save.success.title": "保存成功",
       "searching": "正在網路搜索...",
       "success.notion.export": "成功導出到 Notion",
@@ -525,7 +527,7 @@
       "anthropic": "Anthropic",
       "azure-openai": "Azure OpenAI",
       "baichuan": "百川",
-      "baidu-cloud": "百度云千帆",
+      "baidu-cloud": "百度雲千帆",
       "dashscope": "阿里雲百鍊",
       "deepseek": "深度求索",
       "dmxapi": "DMXAPI",
@@ -560,7 +562,8 @@
       "yi": "零一萬物",
       "zhinao": "360智腦",
       "zhipu": "智譜AI",
-      "xirang": "天翼雲息壤"
+      "xirang": "天翼雲息壤",
+      "tencent-cloud-ti": "騰訊雲TI"
     },
     "settings": {
       "about": "關於與回饋",
@@ -695,6 +698,9 @@
       "general.title": "一般設定",
       "general.user_name": "使用者名稱",
       "general.user_name.placeholder": "輸入您的名稱",
+      "general.image_upload": "圖片上傳",
+      "general.emoji_picker": "表情選擇器",
+      "general.avatar.reset": "重置頭像",
       "general.view_webdav_settings": "查看 WebDAV 設定",
       "input.auto_translate_with_space": "快速敲擊3次空格翻譯",
       "input.target_language": "目標語言",
@@ -841,7 +847,8 @@
         "blacklist_tooltip": "請使用以下格式(換行分隔)\nexample.com\nhttps://www.example.com\nhttps://example.com\n*://*.example.com",
         "search_max_result": "搜索結果個數",
         "search_result_default": "預設"
-      }
+      },
+      "display.assistant.title": "助手設定"
     },
     "translate": {
       "any.language": "任意語言",

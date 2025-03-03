@@ -32,7 +32,7 @@ const persistedReducer = persistReducer(
   {
     key: 'word-box',
     storage,
-    version: 74,
+    version: 76,
     blacklist: ['runtime'],
     migrate
   },

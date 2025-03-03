@@ -115,10 +115,10 @@ const AssistantItem: FC<AssistantItemProps> = ({ assistant, isActive, onSwitch, 
   return (
     <Dropdown menu={{ items: getMenuItems(assistant) }} trigger={['contextMenu']}>
       <Container onClick={handleSwitch} className={isActive ? 'active' : ''}>
-        <AssistantName className="name" title={fullAssistantName}>
+        <AssistantNameRow className="name" title={fullAssistantName}>
           {showAssistantIcon && <ModelAvatar model={assistant.model || defaultModel} size={22} />}
-          {showAssistantIcon ? assistantName : fullAssistantName}
-        </AssistantName>
+          <AssistantName className="text-nowrap">{showAssistantIcon ? assistantName : fullAssistantName}</AssistantName>
+        </AssistantNameRow>
         {isActive && (
           <MenuButton onClick={() => EventEmitter.emit(EVENT_NAMES.SWITCH_TOPIC_SIDEBAR)}>
             <TopicCount className="topics-count">{assistant.topics.length}</TopicCount>
@@ -133,13 +133,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7px 12px;
+  padding: 7px 10px;
   position: relative;
   margin: 0 10px;
-  padding-right: 35px;
   font-family: Ubuntu;
   border-radius: var(--list-item-border-radius);
   border: 0.5px solid transparent;
+  width: calc(var(--assistants-width) - 20px);
   cursor: pointer;
   .iconfont {
     opacity: 0;
@@ -152,23 +152,20 @@ const Container = styled.div`
     background-color: var(--color-background-soft);
     border: 0.5px solid var(--color-border);
     .name {
-      font-weight: 500;
     }
   }
 `
 
-const AssistantName = styled.div`
+const AssistantNameRow = styled.div`
   color: var(--color-text);
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   font-size: 13px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 `
+
+const AssistantName = styled.div``
 
 const MenuButton = styled.div`
   display: flex;
