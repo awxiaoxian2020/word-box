@@ -74,7 +74,7 @@ linux:
   category: Utility
 publish:
   provider: generic
-  url: https://wordbox.ocool.online
+  url: https://cherrystudio.ocool.online
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
 afterPack: scripts/after-pack.js
