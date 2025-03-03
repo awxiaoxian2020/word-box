@@ -1,21 +1,21 @@
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/cherry-studio/releases">
-    <img src="https://github.com/kangfenmao/cherry-studio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
+  <a href="https://github.com/kangfenmao/word-box/releases">
+    <img src="https://github.com/kangfenmao/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
   </a>
 </h1>
 <div align="center">
-  中文 / <a href="https://github.com/kangfenmao/cherry-studio">English</a> / <a href="./README.ja.md">日本語</a>
+  中文 / <a href="https://github.com/kangfenmao/word-box">English</a> / <a href="./README.ja.md">日本語</a>
 </div>
 <div align="center">
- <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fcherry-studio | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fword-box | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
-# 🍒 Cherry Studio
+# 🍒 WordBox
 
-Cherry Studio 是一款支持多个大语言模型（LLM）服务商的桌面客户端，兼容 Windows、Mac 和 Linux 系统。
+WordBox 是一款支持多个大语言模型（LLM）服务商的桌面客户端，兼容 Windows、Mac 和 Linux 系统。
 
 👏 欢迎加入 [Telegram 群组](https://t.me/CherryStudioAI)｜[Discord](https://discord.gg/wez8HtpxqQ) | [QQ群(1025067911)](https://qm.qq.com/q/RIBAO2pPKS)
 
-❤️ 喜欢 Cherry Studio? 点亮小星星 🌟 或 [赞助开发者](sponsor.md)! ❤️
+❤️ 喜欢 WordBox? 点亮小星星 🌟 或 [赞助开发者](sponsor.md)! ❤️
 
 # 🌠 界面
 
@@ -111,7 +111,7 @@ $ yarn build:linux
 
 # 🤝 贡献
 
-我们欢迎对 Cherry Studio 的贡献！您可以通过以下方式贡献：
+我们欢迎对 WordBox 的贡献！您可以通过以下方式贡献：
 
 1. **贡献代码**：开发新功能或优化现有代码。
 2. **修复错误**：提交您发现的错误修复。
@@ -119,7 +119,7 @@ $ yarn build:linux
 4. **产品设计**：参与设计讨论。
 5. **撰写文档**：改进用户手册和指南。
 6. **社区参与**：加入讨论并帮助用户。
-7. **推广使用**：宣传 Cherry Studio。
+7. **推广使用**：宣传 WordBox。
 
 ## 入门
 
@@ -138,8 +138,8 @@ $ yarn build:linux
 
 # 🚀 贡献者
 
-<a href="https://github.com/kangfenmao/cherry-studio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kangfenmao/cherry-studio" />
+<a href="https://github.com/kangfenmao/word-box/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kangfenmao/word-box" />
 </a>
 <br /><br />
 
@@ -149,7 +149,7 @@ $ yarn build:linux
 
 # 📣 产品猎人
 
-<a href="https://www.producthunt.com/posts/cherry-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/word-box?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 # ☕ 赞助
 
@@ -161,4 +161,4 @@ $ yarn build:linux
 
 # ⭐️ Star 记录
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kangfenmao/cherry-studio&type=Timeline)](https://star-history.com/#kangfenmao/cherry-studio&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=kangfenmao/word-box&type=Timeline)](https://star-history.com/#kangfenmao/word-box&Timeline)

@@ -115,7 +115,7 @@ const initialState: SettingsState = {
   webdavHost: '',
   webdavUser: '',
   webdavPass: '',
-  webdavPath: '/cherry-studio',
+  webdavPath: '/word-box',
   webdavAutoSync: false,
   webdavSyncInterval: 0,
   translateModelPrompt: TRANSLATE_PROMPT,

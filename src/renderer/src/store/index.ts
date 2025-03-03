@@ -30,7 +30,7 @@ const rootReducer = combineReducers({
 
 const persistedReducer = persistReducer(
   {
-    key: 'cherry-studio',
+    key: 'word-box',
     storage,
     version: 74,
     blacklist: ['runtime'],

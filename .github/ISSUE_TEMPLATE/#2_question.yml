@@ -36,7 +36,7 @@ body:
     id: version
     attributes:
       label: 版本
-      description: 您正在运行的 Cherry Studio 版本是什么？
+      description: 您正在运行的 WordBox 版本是什么？
       placeholder: 例如 v1.0.0
     validations:
       required: true

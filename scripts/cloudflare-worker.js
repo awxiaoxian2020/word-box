@@ -1,9 +1,9 @@
 // 配置信息
 const config = {
-  R2_CUSTOM_DOMAIN: 'cherrystudio.ocool.online',
-  R2_BUCKET_NAME: 'cherrystudio',
+  R2_CUSTOM_DOMAIN: 'wordbox.ocool.online',
+  R2_BUCKET_NAME: 'wordbox',
   // 缓存键名
-  CACHE_KEY: 'cherry-studio-latest-release',
+  CACHE_KEY: 'wordbox-latest-release',
   VERSION_DB: 'versions.json',
   LOG_FILE: 'logs.json',
   MAX_LOGS: 1000 // 最多保存多少条日志
@@ -158,7 +158,7 @@ async function getLatestRelease(env) {
     return new Response(
       JSON.stringify({
         error: '获取版本信息失败: ' + error.message,
-        detail: '请稍���再试'
+        detail: '请稍后再试'
       }),
       {
         status: 500,
@@ -349,7 +349,7 @@ async function getCachedRelease(env) {
 async function checkNewRelease(env) {
   try {
     // 获取 GitHub 最新版本
-    const githubResponse = await fetch('https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest', {
+    const githubResponse = await fetch('https://api.github.com/repos/kangfenmao/word-box/releases/latest', {
       headers: { 'User-Agent': 'CloudflareWorker' }
     })
 

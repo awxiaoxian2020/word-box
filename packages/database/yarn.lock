@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@cherry-studio/database@workspace:.":
+"@word-box/database@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@cherry-studio/database@workspace:."
+  resolution: "@word-box/database@workspace:."
   dependencies:
     csv-parser: "npm:^3.0.0"
     sqlite3: "npm:^5.1.7"

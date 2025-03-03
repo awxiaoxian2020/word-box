@@ -1,20 +1,20 @@
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/cherry-studio/releases">
-    <img src="https://github.com/kangfenmao/cherry-studio/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" /><br>
+  <a href="https://github.com/kangfenmao/word-box/releases">
+    <img src="https://github.com/kangfenmao/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" /><br>
   </a>
 </h1>
   <p align="center">English | <a href="./docs/README.zh.md">中文</a> | <a href="./docs/README.ja.md">日本語</a><br></p>
 <div align="center">
- <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fcherry-studio | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fword-box | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 
-# 🍒 Cherry Studio
+# 🍒 WordBox
 
-Cherry Studio is a desktop client that supports for multiple LLM providers, available on Windows, Mac and Linux.
+WordBox is a desktop client that supports for multiple LLM providers, available on Windows, Mac and Linux.
 
 👏 Join [Telegram Group](https://t.me/CherryStudioAI)｜[Discord](https://discord.gg/wez8HtpxqQ) | [QQ Group(1025067911)](https://qm.qq.com/q/RIBAO2pPKS)
 
-❤️ Like Cherry Studio? Give it a star 🌟 or [Sponsor](docs/sponsor.md) to support the development!
+❤️ Like WordBox? Give it a star 🌟 or [Sponsor](docs/sponsor.md) to support the development!
 
 # 🌠 Screenshot
 
@@ -110,7 +110,7 @@ $ yarn build:linux
 
 # 🤝 Contributing
 
-We welcome contributions to Cherry Studio! Here are some ways you can contribute:
+We welcome contributions to WordBox! Here are some ways you can contribute:
 
 1. **Contribute Code**: Develop new features or optimize existing code.
 2. **Fix Bugs**: Submit fixes for any bugs you find.
@@ -118,7 +118,7 @@ We welcome contributions to Cherry Studio! Here are some ways you can contribute
 4. **Product Design**: Participate in design discussions.
 5. **Write Documentation**: Improve user manuals and guides.
 6. **Community Engagement**: Join discussions and help users.
-7. **Promote Usage**: Spread the word about Cherry Studio.
+7. **Promote Usage**: Spread the word about WordBox.
 
 ## Getting Started
 
@@ -137,8 +137,8 @@ Thank you for your support and contributions!
 
 # 🚀 Contributors
 
-<a href="https://github.com/kangfenmao/cherry-studio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kangfenmao/cherry-studio" />
+<a href="https://github.com/kangfenmao/word-box/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kangfenmao/word-box" />
 </a>
 <br /><br />
 
@@ -148,7 +148,7 @@ Thank you for your support and contributions!
 
 # 📣 Product Hunt
 
-<a href="https://www.producthunt.com/posts/cherry-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/word-box?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 # ☕ Sponsor
 
@@ -160,4 +160,4 @@ Thank you for your support and contributions!
 
 # ⭐️ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kangfenmao/cherry-studio&type=Timeline)](https://star-history.com/#kangfenmao/cherry-studio&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=kangfenmao/word-box&type=Timeline)](https://star-history.com/#kangfenmao/word-box&Timeline)

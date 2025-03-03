@@ -5,7 +5,7 @@ import { setWebDAVSyncState } from '@renderer/store/runtime'
 import dayjs from 'dayjs'
 
 export async function backup() {
-  const filename = `cherry-studio.${dayjs().format('YYYYMMDDHHmm')}.zip`
+  const filename = `word-box.${dayjs().format('YYYYMMDDHHmm')}.zip`
   const fileContnet = await getBackupData()
   const selectFolder = await window.api.file.selectFolder()
   if (selectFolder) {
@@ -223,14 +223,14 @@ async function handleData(data: Record<string, any>) {
       }
     }
 
-    await localStorage.setItem('persist:cherry-studio', data.localStorage['persist:cherry-studio'])
+    await localStorage.setItem('persist:word-box', data.localStorage['persist:word-box'])
     window.message.success({ content: i18n.t('message.restore.success'), key: 'restore' })
     setTimeout(() => window.api.reload(), 1000)
     return
   }
 
   if (data.version >= 2) {
-    localStorage.setItem('persist:cherry-studio', data.localStorage['persist:cherry-studio'])
+    localStorage.setItem('persist:word-box', data.localStorage['persist:word-box'])
     await restoreDatabase(data.indexedDB)
     window.message.success({ content: i18n.t('message.restore.success'), key: 'restore' })
     setTimeout(() => window.api.reload(), 1000)

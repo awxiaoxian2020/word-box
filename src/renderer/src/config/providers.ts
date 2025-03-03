@@ -154,11 +154,11 @@ export const PROVIDER_CONFIG = {
     },
     websites: {
       official:
-        'https://ppinfra.com/model-api/product/llm-api?utm_source=github_cherry-studio&utm_medium=github_readme&utm_campaign=link',
+        'https://ppinfra.com/model-api/product/llm-api?utm_source=github_word-box&utm_medium=github_readme&utm_campaign=link',
       apiKey: 'https://ppinfra.com/settings/key-management',
       docs: 'https://ppinfra.com/docs/model-api/reference/llm/llm.html',
       models:
-        'https://ppinfra.com/model-api/product/llm-api?utm_source=github_cherry-studio&utm_medium=github_readme&utm_campaign=link'
+        'https://ppinfra.com/model-api/product/llm-api?utm_source=github_word-box&utm_medium=github_readme&utm_campaign=link'
     }
   },
   gemini: {

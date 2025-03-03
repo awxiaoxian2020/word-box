@@ -6,7 +6,7 @@ import path from 'path'
 
 export async function updateUserDataPath() {
   const currentPath = app.getPath('userData')
-  const oldPath = currentPath.replace('CherryStudio', 'cherry-studio')
+  const oldPath = currentPath.replace('WordBox', 'word-box')
 
   if (currentPath !== oldPath && fs.existsSync(oldPath)) {
     Logger.log('Update userData path')
