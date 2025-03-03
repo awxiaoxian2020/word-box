@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/word-box/releases">
-    <img src="https://github.com/kangfenmao/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
+  <a href="https://github.com/awxiaoxian2020/word-box/releases">
+    <img src="https://github.com/awxiaoxian2020/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
   </a>
 </h1>
 <div align="center">
@@ -138,13 +138,13 @@ WordBoxへの貢献を歓迎します！以下の方法で貢献できます：
 
 # 🚀 コントリビューター
 
-<a href="https://github.com/kangfenmao/word-box/graphs/contributors">
+<a href="https://github.com/awxiaoxian2020/word-box/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kangfenmao/word-box" />
 </a>
 
 # コミュニティ
 
-[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/kangfenmao)
+[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/awxiaoxian2020)
 
 # 📣 プロダクトハント
 

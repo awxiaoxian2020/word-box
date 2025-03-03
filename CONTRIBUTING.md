@@ -40,6 +40,6 @@
 如果您有任何问题或建议，欢迎通过以下方式联系我们：
 
 - 微信：kangfenmao
-- [GitHub Issues](https://github.com/kangfenmao/word-box/issues)
+- [GitHub Issues](https://github.com/awxiaoxian2020/word-box/issues)
 
 感谢您的支持和贡献！我们期待与您一起将 WordBox 打造成更好的产品。

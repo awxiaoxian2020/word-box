@@ -1,10 +1,10 @@
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/word-box/releases">
-    <img src="https://github.com/kangfenmao/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
+  <a href="https://github.com/awxiaoxian2020/word-box/releases">
+    <img src="https://github.com/awxiaoxian2020/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" />
   </a>
 </h1>
 <div align="center">
-  中文 / <a href="https://github.com/kangfenmao/word-box">English</a> / <a href="./README.ja.md">日本語</a>
+  中文 / <a href="https://github.com/awxiaoxian2020/word-box">English</a> / <a href="./README.ja.md">日本語</a>
 </div>
 <div align="center">
  <a href="https://trendshift.io/repositories/11772" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fword-box | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
@@ -138,14 +138,14 @@ $ yarn build:linux
 
 # 🚀 贡献者
 
-<a href="https://github.com/kangfenmao/word-box/graphs/contributors">
+<a href="https://github.com/awxiaoxian2020/word-box/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kangfenmao/word-box" />
 </a>
 <br /><br />
 
 # 🌐 社区
 
-[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/kangfenmao)
+[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/awxiaoxian2020)
 
 # 📣 产品猎人
 

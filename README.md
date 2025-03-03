@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="https://github.com/kangfenmao/word-box/releases">
-    <img src="https://github.com/kangfenmao/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" /><br>
+  <a href="https://github.com/awxiaoxian2020/word-box/releases">
+    <img src="https://github.com/awxiaoxian2020/word-box/blob/main/build/icon.png?raw=true" width="150" height="150" alt="banner" /><br>
   </a>
 </h1>
   <p align="center">English | <a href="./docs/README.zh.md">中文</a> | <a href="./docs/README.ja.md">日本語</a><br></p>
@@ -137,14 +137,14 @@ Thank you for your support and contributions!
 
 # 🚀 Contributors
 
-<a href="https://github.com/kangfenmao/word-box/graphs/contributors">
+<a href="https://github.com/awxiaoxian2020/word-box/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kangfenmao/word-box" />
 </a>
 <br /><br />
 
 # 🌐 Community
 
-[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/kangfenmao)
+[Telegram](https://t.me/CherryStudioAI) | [Email](mailto:kangfenmao@gmail.com) | [Twitter](https://x.com/awxiaoxian2020)
 
 # 📣 Product Hunt
 

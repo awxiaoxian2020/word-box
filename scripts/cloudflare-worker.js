@@ -349,7 +349,7 @@ async function getCachedRelease(env) {
 async function checkNewRelease(env) {
   try {
     // 获取 GitHub 最新版本
-    const githubResponse = await fetch('https://api.github.com/repos/kangfenmao/word-box/releases/latest', {
+    const githubResponse = await fetch('https://api.github.com/repos/awxiaoxian2020/word-box/releases/latest', {
       headers: { 'User-Agent': 'CloudflareWorker' }
     })
 
