@@ -11,13 +11,17 @@ export const useKnowledgeFiles = () => {
 
   useEffect(() => {
     const items = bases.map((kb) => kb.items).flat()
-    const fileItems = items.filter((item) => item.type === 'file')
+
+    const fileItems = items
+      .filter((item) => item.type === 'file')
+      .filter((item) => item.processingStatus === 'completed')
+
     const files = fileItems.map((item) => item.content as FileType)
+
     !isEmpty(files) && setKnowledgeFiles(files)
   }, [bases])
 
   const removeAllFiles = async () => {
-    console.debug('removeAllFiles', knowledgeFiles)
     await FileManager.deleteFiles(knowledgeFiles)
 
     const newBases = bases.map((kb) => ({

@@ -1,5 +1,6 @@
 import { electronAPI } from '@electron-toolkit/preload'
-import { FileType, KnowledgeBaseParams, KnowledgeItem, Shortcut, WebDavConfig } from '@types'
+import type { ExtractChunkData } from '@llm-tools/embedjs-interfaces'
+import { FileType, KnowledgeBaseParams, KnowledgeItem, MCPServer, Shortcut, WebDavConfig } from '@types'
 import { contextBridge, ipcRenderer, OpenDialogOptions, shell } from 'electron'
 
 // Custom APIs for renderer
@@ -8,6 +9,7 @@ const api = {
   reload: () => ipcRenderer.invoke('app:reload'),
   setProxy: (proxy: string) => ipcRenderer.invoke('app:proxy', proxy),
   checkForUpdate: () => ipcRenderer.invoke('app:check-for-update'),
+  showUpdateDialog: () => ipcRenderer.invoke('app:show-update-dialog'),
   setLanguage: (lang: string) => ipcRenderer.invoke('app:set-language', lang),
   setTray: (isActive: boolean) => ipcRenderer.invoke('app:set-tray', isActive),
   restartTray: () => ipcRenderer.invoke('app:restart-tray'),
@@ -74,7 +76,9 @@ const api = {
     remove: ({ uniqueId, uniqueIds, base }: { uniqueId: string; uniqueIds: string[]; base: KnowledgeBaseParams }) =>
       ipcRenderer.invoke('knowledge-base:remove', { uniqueId, uniqueIds, base }),
     search: ({ search, base }: { search: string; base: KnowledgeBaseParams }) =>
-      ipcRenderer.invoke('knowledge-base:search', { search, base })
+      ipcRenderer.invoke('knowledge-base:search', { search, base }),
+    rerank: ({ search, base, results }: { search: string; base: KnowledgeBaseParams; results: ExtractChunkData[] }) =>
+      ipcRenderer.invoke('knowledge-base:rerank', { search, base, results })
   },
   window: {
     setMinimumSize: (width: number, height: number) => ipcRenderer.invoke('window:set-minimum-size', width, height),
@@ -105,9 +109,26 @@ const api = {
     decrypt: (encryptedData: string, iv: string, secretKey: string) =>
       ipcRenderer.invoke('aes:decrypt', encryptedData, iv, secretKey)
   },
+  mcp: {
+    listServers: () => ipcRenderer.invoke('mcp:list-servers'),
+    addServer: (server: MCPServer) => ipcRenderer.invoke('mcp:add-server', server),
+    updateServer: (server: MCPServer) => ipcRenderer.invoke('mcp:update-server', server),
+    deleteServer: (serverName: string) => ipcRenderer.invoke('mcp:delete-server', serverName),
+    setServerActive: (name: string, isActive: boolean) =>
+      ipcRenderer.invoke('mcp:set-server-active', { name, isActive }),
+    listTools: (serverName?: string) => ipcRenderer.invoke('mcp:list-tools', serverName),
+    callTool: (params: { client: string; name: string; args: any }) => ipcRenderer.invoke('mcp:call-tool', params),
+    cleanup: () => ipcRenderer.invoke('mcp:cleanup')
+  },
   shell: {
-    openExternal: shell.openExternal
-  }
+    openExternal: shell?.openExternal
+  },
+
+  // Binary related APIs
+  isBinaryExist: (name: string) => ipcRenderer.invoke('app:is-binary-exist', name),
+  getBinaryPath: (name: string) => ipcRenderer.invoke('app:get-binary-path', name),
+  installUVBinary: () => ipcRenderer.invoke('app:install-uv-binary'),
+  installBunBinary: () => ipcRenderer.invoke('app:install-bun-binary')
 }
 
 // Use `contextBridge` APIs to expose Electron APIs to
